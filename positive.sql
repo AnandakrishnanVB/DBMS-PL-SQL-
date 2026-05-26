@@ -1,0 +1,14 @@
+ACCEPT N PROMPT 'Enter the number :';
+SET SERVEROUTPUT ON;
+DECLARE
+N NUMBER := &N;
+BEGIN
+IF(N=0) THEN
+DBMS_OUTPUT.PUT_LINE('Number is zero');
+ELSIF(N>0) THEN
+DBMS_OUTPUT.PUT_LINE('Number is positive');
+ELSE
+DBMS_OUTPUT.PUT_LINE('Number is negative');
+END IF;
+END;
+/

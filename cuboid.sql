@@ -1,0 +1,22 @@
+ACCEPT L NUMBER PROMPT 'Enter the length: '
+ACCEPT B NUMBER PROMPT 'Enter the breadth: '
+ACCEPT H NUMBER PROMPT 'Enter the height: '
+
+SET SERVEROUTPUT ON;
+
+DECLARE
+    L NUMBER;
+    B NUMBER;
+    H NUMBER;
+    V NUMBER;
+
+BEGIN
+    L := &L;
+    B := &B;
+    H := &H;
+
+    V := L * B * H;
+
+    DBMS_OUTPUT.PUT_LINE('Volume is: ' || V);
+END;
+/

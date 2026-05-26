@@ -1,0 +1,18 @@
+SET SERVEROUTPUT ON;
+DECLARE
+N NUMBER := &N;
+I NUMBER;
+TEMP NUMBER := 0;
+BEGIN
+FOR I IN 2..N/2 LOOP
+    IF MOD(N,I) = 0 THEN
+        TEMP := 1;
+    END IF;
+END LOOP;
+IF TEMP = 0 THEN
+DBMS_OUTPUT.PUT_LINE('Number is prime');
+ELSE
+DBMS_OUTPUT.PUT_LINE('Number is not prime');
+END IF;
+END;
+/

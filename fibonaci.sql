@@ -1,0 +1,15 @@
+SET SERVEROUTPUT ON;
+DECLARE
+N NUMBER := &N;
+A NUMBER := 0;
+B NUMBER := 1;
+TEMP NUMBER;
+BEGIN
+FOR I IN 1..N LOOP
+    DBMS_OUTPUT.PUT_LINE(A ||' ');
+    TEMP := A + B;
+    A := B;
+    B := TEMP;
+END LOOP;
+END;
+/
