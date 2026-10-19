@@ -23,14 +23,14 @@ This repository contains basic PL/SQL programs for practicing Oracle SQL and PL/
 
 ---
 
-## Requirements
+## Requirements.
 
 - Oracle Database
 - SQL*Plus or Oracle SQL Developer
 
 ---
 
-## How to Run
+## How to Run.
 
 Using SQL*Plus:
 
